@@ -1,0 +1,17 @@
+# UE5 二进制资源走 Git LFS
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap   filter=lfs diff=lfs merge=lfs -text
+*.ubulk  filter=lfs diff=lfs merge=lfs -text
+*.uexp   filter=lfs diff=lfs merge=lfs -text
+*.upk    filter=lfs diff=lfs merge=lfs -text
+*.pak    filter=lfs diff=lfs merge=lfs -text
+*.ucas   filter=lfs diff=lfs merge=lfs -text
+*.utoc   filter=lfs diff=lfs merge=lfs -text
+
+# 源码/配置按文本处理，统一 LF
+*.cpp  text eol=lf
+*.h    text eol=lf
+*.cs   text eol=lf
+*.py   text eol=lf
+*.uproject  text eol=lf
+*.ini  text eol=lf

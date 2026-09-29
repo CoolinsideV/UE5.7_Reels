@@ -1,0 +1,30 @@
+# ---- UE5 构建产物（本机生成，不入库）----
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+*.pdb
+*.obj
+
+# ---- IDE / 编辑器 ----
+.vs/
+.vscode/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.xcodeproj/
+*.xcworkspace/
+
+# ---- 第三方插件 UnrealClaude（Natfii/UnrealClaude）----
+# 自带已编译二进制、node_modules，且 Resources/mcp-bridge 内嵌独立 .git 仓库，
+# 入库会被当成 submodule 且体积翻倍。需要时从上游仓库安装。
+Plugins/UnrealClaude/
+
+# ---- 系统文件 ----
+Thumbs.db
+Desktop.ini
+.DS_Store
